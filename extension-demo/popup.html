@@ -3,11 +3,19 @@
 	  <head>
 	    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <title>Document</title>
+	    <embed src="music/Regression.mp3" hidden="false" autostart="true" loop="true">
 	  </head>
 	  <body style="background-color: rgb(0, 204, 204);">
 	    <h1>Hello World!!!</h1>
 		<h2>EECS 1720</h2>
 		<button type="button">Click Me!</button>
-		<embed src="music/Regression.mp3" hidden="true" autostart="true" loop="true">
+			<audio autoplay="autoplay" loop="loop" preload="auto" controls="controls"
+            src="music/Regression.mp3">       
+				</audio>
+			<style type="text/css">
+ 					audio{
+         					display: none;
+     						}
+			</style>
 	  </body>
   </html>
