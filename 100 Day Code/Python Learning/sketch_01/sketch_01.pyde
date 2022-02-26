@@ -1,4 +1,5 @@
 value = 0
+
 def setup():
 
     size(800, 600)
@@ -12,9 +13,7 @@ def draw():
     
 def mousePressed():
     global value
-    
-    if value == 0 :
-        value == (random(255))
-        
+    if value == 0:
+        value = 255
     else:
-        value == 255;
+        value = 0
