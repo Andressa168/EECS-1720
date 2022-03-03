@@ -34,4 +34,4 @@ def mousePressed():
 
 def mouseClicked():
     
-    music.play(1,1)
+    music.play(1, 1)
