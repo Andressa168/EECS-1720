@@ -1,10 +1,17 @@
+add_library('sound')
 value = 0
+music = None
 
 def setup():
     size(800, 650)
     smooth()
+    
+    global music
+    
+    music = SoundFile(this, "Remember_the_Time.mp3")
 
 def draw():
+    
     global value
     
     img = loadImage("a.png")
@@ -24,3 +31,7 @@ def mousePressed():
         value = 255
     else:
         value = 0
+
+def mouseClicked():
+    
+    music.play(1,1)
