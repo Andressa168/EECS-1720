@@ -25,6 +25,12 @@ def draw():
     for i in range(100):
         ellipse(i, i , 50, 50)
     
+    if keyPressed == True:
+        # heavy
+        music.play()
+    else:
+        pass
+    
 def mousePressed():
     global value
     if value == 0:
