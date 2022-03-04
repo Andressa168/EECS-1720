@@ -1,6 +1,7 @@
 add_library('sound')
 value = 0
 music = None
+overButton = False
 
 def setup():
     size(800, 650)
@@ -23,13 +24,22 @@ def draw():
 
     fill(value)
     for i in range(100):
-        ellipse(i, i , 50, 50)
+        ellipse(width/3, height/3 , 50, 50)
     
     if keyPressed == True:
         # heavy
         music.stop()
     else:
         pass
+        
+    if overButton:
+        fill(255)
+    else:
+        noFill()
+
+    rect(145, 85, 75, 75)
+    ellipse(150, 85 , 50, 50)
+    ellipse(210, 85 , 50, 50)
     
 def mousePressed():
     global value
@@ -37,7 +47,20 @@ def mousePressed():
         value = 255
     else:
         value = 0
+    
+    if overButton:
+        link("https://www.youtube.com/watch?v=LeiFF0gvqcc&ab_channel=michaeljacksonVEVO")
 
 def mouseClicked():
-    
     music.play(1, 1)
+
+def mouseMoved():
+    checkButtons()
+
+def mouseDragged():
+    checkButtons()
+
+def checkButtons():
+    global overButton
+    
+    overButton = 105 < mouseX < 180 and 60 < mouseY < 135;
