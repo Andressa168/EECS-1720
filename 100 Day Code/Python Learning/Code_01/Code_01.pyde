@@ -27,7 +27,7 @@ def draw():
     
     if keyPressed == True:
         # heavy
-        music.play()
+        music.stop()
     else:
         pass
     
