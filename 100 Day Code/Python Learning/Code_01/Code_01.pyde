@@ -33,13 +33,13 @@ def draw():
         pass
         
     if overButton:
-        fill(255)
+        fill(255, 128, 0)
+        rect(145, 85, 75, 75)
+        ellipse(150, 85 , 50, 50)
+        ellipse(210, 85 , 50, 50)
+        
     else:
         noFill()
-
-    rect(145, 85, 75, 75)
-    ellipse(150, 85 , 50, 50)
-    ellipse(210, 85 , 50, 50)
     
 def mousePressed():
     global value
