@@ -44,6 +44,9 @@ Use of <div> and <span>. <img> Add picture in the practice HTML file.
 March 16
 Continuous working on and adding a music file in practice.html.
 
-March 17
+March 17 - 18
 Start plan B to make auto-start playing the song in HTML Chrome.  
 https://developer.chrome.com/blog/autoplay/ - ("Autoplay policy in Chrome Improved user experience, minimized incentives to install ad blockers, and reduced data consumption")
+Chrome no longer supports opening the browser to automatically play sound, in order to curb the impact of some ads on users, 
+the browser upgrade 70.0 after the version of the audio autoplay restrictions, can not be triggered by code to play audio events must be manually triggered by the user. 
+The main purpose is to allow users to trigger on their own and then play the song.
