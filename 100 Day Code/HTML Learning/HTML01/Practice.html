@@ -5,17 +5,13 @@
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Practice</title>
+
+        <!-- add music -->
+        <!-- <embed src="data/Summer Dream.mp3" hidden="true" autostart="true" loop="true"> -->
     </head>
 
     <!-- add beckground colour for website -->
-    <body style="background-color:powderblue;">
-
-        <!-- add music -->
-        <embed src="data/Summer Dream.mp3" hidden="true" autostart="true" loop="true">
-
-            <!-- Plan B for the audio play -->
-                        <!-- <audio autoplay="autoplay" loop="loop" preload="auto" controls="controls"
-            src="data/Summer Dream.mp3">        -->
+    <body style="background-color:powderblue;">        
     
         <h1>Recipe - Good Old Fashioned Pancakes!!!</h1>
         <br />
@@ -23,7 +19,7 @@
         <img src="https://static.onecms.io/wp-content/uploads/sites/43/2022/02/16/21014-Good-old-Fashioned-Pancakes-mfs_001.jpg" 
                     title="picture reference: https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/ " 
                                                 width="800" height="600" border="5">
-                                                
+
         <h2>Ingredients:</h2>
         <p> 1 ½ cups all-purpose flour <br />
 
@@ -68,6 +64,15 @@
 
         <h4>Reference: https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/</h4>
 
-</audio>
+
+        <!-- Plan B for the audio play -->
+        <audio id="audio" src="data/Summer Dream.mp3" loop="loop">
     </body>
+
+    <script>
+
+        window.onclick = function(){
+            audio.play();
+        }
+    </script>
 </html>
