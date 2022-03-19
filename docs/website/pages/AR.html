@@ -20,6 +20,13 @@
 
         <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: -79.313647; latitude: 43.817031;" animation-mixer/>
 
+        <a-text
+        value="I am here"
+        scale = "100 100 100"
+        look-at="[gps-camera]"
+        align="center"
+        gps-entity-place="latitude: 43.817031; longitude: -79.313647;"></a-text>
+
         <a-camera gps-camera rotation-reader></a-camera>
 
     </a-scene>
