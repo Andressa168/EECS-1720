@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+    <body>
+        <section>
+			<center>
+				<br>
+				<h1>JavaScript Button to AR page</h1>
+				<br>
+				<p id="demo">Building Interactive Systems</p>
+				<br>
+				<button type="button" onclick="openTab('pages/AR.html')">-----------AR----------</button>
+				<script>
+					function openTab(url) {
+						const link = document.createElement('a');
+						link.href = url;
+						link.target = '_blank';
+						document.body.appendChild(link);
+						link.click();
+						link.remove();
+					}
+				</script>
+
+				<button type="button" onclick="openTab('pages/VR/index.html')">----------World---------</button>
+				<script>
+					function openTab(url) {
+						const link = document.createElement('a');
+						link.href = url;
+						link.target = '_blank';
+						document.body.appendChild(link);
+						link.click();
+						link.remove();
+					}
+				</script>
+	
+			</center>
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </section>
+    </body>
+
+</html>
